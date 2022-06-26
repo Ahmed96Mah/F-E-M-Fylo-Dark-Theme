@@ -1,0 +1,72 @@
+@use 'variables' as v;
+
+footer {
+  padding-top: 15rem;
+  padding-left: 1.8rem;
+  background-color: v.$footer-drk-main;
+  #ftrLogo {
+    margin-bottom: 2.5rem;
+  }
+  div {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    &.ftrInfo {
+      img {
+        width: 1rem;
+        padding-top: 0.3rem;
+      }
+      p {
+        margin: 0rem 0rem 0rem 1.5rem;
+        line-height: 1.5rem;
+        color: v.$white-clr;
+        padding-right: 1rem;
+      }
+      &#lastInfo {
+        margin-bottom: 4rem;
+      }
+    }
+    &.list {
+      margin: 1rem 0rem;
+      p {
+        cursor: pointer;
+        margin: 0;
+        color: v.$white-clr;
+        line-height: 2.4rem;
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+    &#social {
+      margin-left: 30%;
+      i {
+        cursor: pointer;
+        font-size: 0.75rem;
+        color: v.$white-clr;
+        border: 1px solid v.$white-clr;
+        border-radius: 0.9rem;
+        padding: 0.4rem 0.45rem;
+        margin: 0.5rem;
+        &.fa-facebook-f {
+          padding: 0.4rem 0.55rem;
+        }
+        &:hover {
+          border-color: v.$cyan-clr;
+          color: v.$cyan-clr;
+        }
+      }
+    }
+  }
+  .attribution {
+    font-family: 'Open Sans', sans-serif;
+    color: v.$white-clr;
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    a {
+      color: skyblue;
+    }
+  }
+}
