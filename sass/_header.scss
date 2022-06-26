@@ -1,0 +1,28 @@
+@use 'variables' as v;
+
+header {
+  background-color: v.$top-drk-blue;
+  padding: 0.8rem 1.5rem 0.8rem 1.2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 50%;
+    li {
+      a {
+        text-decoration: none;
+        color: v.$light-gray-clr;
+        font-size: 0.75rem;
+        &:hover {
+          font-weight: 700;
+          color: v.$white-clr;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  img {
+    width: 5rem;
+  }
+}
