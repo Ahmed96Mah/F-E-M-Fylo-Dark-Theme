@@ -1,0 +1,12 @@
+# Ignore all design files
+*.sketch
+*.fig
+
+# Ignore any converted design files
+*.xd
+
+# Ignore the node module folder
+node_modules
+
+# Ignore package-lock.json file
+package-lock.json
