@@ -1,0 +1,77 @@
+@use 'mixins' as m;
+
+body {
+  @include m.displayGrid(3, 1fr, 'header' 'main' 'footer');
+  header {
+    @include m.displayFlex(row, nowrap, space-between, center);
+    ul {
+      @include m.displayFlex(row, nowrap, space-between, center);
+    }
+  }
+  main {
+    div {
+      &#intro {
+        @include m.displayFlex(column, nowrap, center, center);
+      }
+      &#info {
+        div {
+          &#upper {
+            @include m.displayFlex(row, wrap, space-between, center);
+            div {
+              @include m.displayFlex(column, nowrap, center, center);
+            }
+          }
+          &#lower {
+            @include m.displayFlex(row, wrap, space-between, center);
+            div {
+              @include m.displayFlex(column, nowrap, center, center);
+            }
+          }
+        }
+      }
+      &#middle {
+        @include m.displayFlex(column, nowrap, center, center);
+        div {
+          &#midDiv {
+            @include m.displayFlex(column, nowrap, center, flex-start);
+            #see {
+              @include m.displayFlex(row, nowrap, space-between, center);
+            }
+          }
+        }
+      }
+      &#testimon {
+        @include m.displayFlex(column, nowrap, center, center);
+        div {
+          &.card {
+            @include m.displayFlex(column, nowrap, center, flex-start);
+            div {
+              @include m.displayFlex(row, nowrap, space-between, center);
+              .cardInfo {
+                @include m.displayFlex(column, nowrap, center, flex-start);
+              }
+            }
+          }
+        }
+      }
+      &#end {
+        @include m.displayFlex(column, nowrap, center, center);
+        #endDiv {
+          @include m.displayFlex(column, nowrap, center, center);
+        }
+      }
+    }
+  }
+  footer {
+    @include m.displayFlex(column, nowrap, center, flex-start);
+    div {
+      @include m.displayFlex(row, nowrap, space-between, flex-start);
+      &.list {
+        @include m.displayFlex(column, nowrap, center, flex-start);
+      }
+      &#social {
+        @include m.displayFlex(row, nowrap, space-between, center);
+      }
+    }
+  }
+}
