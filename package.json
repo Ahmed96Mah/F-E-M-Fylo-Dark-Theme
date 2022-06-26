@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "f-e-m-fylo-dark-theme",
+  "version": "1.0.0",
+  "description": "![Design preview for the Fylo dark theme landing page challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --config .prettierrc.json --ignore-path .prettierignore --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmed96Mah/F-E-M-Fylo-Dark-Theme.git"
+  },
+  "keywords": [],
+  "author": "Ahmed Mahmoud Abdalwahab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ahmed96Mah/F-E-M-Fylo-Dark-Theme/issues"
+  },
+  "homepage": "https://github.com/Ahmed96Mah/F-E-M-Fylo-Dark-Theme#readme",
+  "devDependencies": {
+    "@types/prettier": "^2.6.3",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.53.0",
+    "typescript": "^4.7.4"
+  }
+}
