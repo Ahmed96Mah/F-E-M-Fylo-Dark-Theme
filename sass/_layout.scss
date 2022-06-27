@@ -30,7 +30,7 @@ body {
         }
       }
       &#middle {
-        @include m.displayFlex(column, nowrap, center, center);
+        @include m.displayFlex(row, wrap, space-between, center);
         div {
           &#midDiv {
             @include m.displayFlex(column, nowrap, center, flex-start);
@@ -57,20 +57,60 @@ body {
       &#end {
         @include m.displayFlex(column, nowrap, center, center);
         #endDiv {
-          @include m.displayFlex(column, nowrap, center, center);
+          @include m.displayFlex(row, wrap, space-between, center);
         }
       }
     }
   }
   footer {
     @include m.displayFlex(column, nowrap, center, flex-start);
-    div {
-      @include m.displayFlex(row, nowrap, space-between, flex-start);
-      &.list {
-        @include m.displayFlex(column, nowrap, center, flex-start);
+    #mainFooter {
+      @include m.displayFlex(column, nowrap, center, flex-start);
+      div {
+        @include m.displayFlex(row, nowrap, space-between, flex-start);
+        &#lastInfo {
+          @include m.displayFlex(column, nowrap, center, flex-start);
+        }
+        &.list {
+          @include m.displayFlex(column, nowrap, center, flex-start);
+        }
+        &#social {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
       }
-      &#social {
-        @include m.displayFlex(row, nowrap, space-between, center);
+    }
+    #lowerFooter {
+      @include m.displayFlex(column, nowrap, center, flex-start);
+    }
+  }
+
+  /* ----------------------- Media Queries ----------------------- */
+  @include m.flippedPadScreens(64em, 75em, 37.5em) {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    main {
+      div {
+        &#testimon {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+      }
+    }
+    footer {
+      #mainFooter {
+        @include m.displayFlex(row, nowrap, space-between, flex-start);
+      }
+    }
+  }
+  @include m.wideScreens(43rem, 73.75rem) {
+    main {
+      div {
+        &#testimon {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+      }
+    }
+    footer {
+      #mainFooter {
+        @include m.displayFlex(row, nowrap, space-between, flex-start);
       }
     }
   }
