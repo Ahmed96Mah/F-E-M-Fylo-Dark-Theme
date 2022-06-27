@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'mixins' as m;
 
 header {
   background-color: v.$top-drk-blue;
@@ -24,5 +25,50 @@ header {
   }
   img {
     width: 5rem;
+  }
+
+  /* ----------------------- Media Queries ----------------------- */
+  @include m.flippedMobileScreens(41.25em, 53.75em, 26.25em) {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+    ul {
+      width: 35%;
+    }
+  }
+
+  @include m.padScreens(47.813em, 63.938em) {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    ul {
+      width: 35%;
+    }
+  }
+  @include m.flippedPadScreens(64em, 75em, 37.5em) {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    padding: 4.5rem 5rem 0.8rem 5rem;
+    ul {
+      width: 21.5%;
+      li {
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+    img {
+      width: 11rem;
+    }
+  }
+
+  @include m.wideScreens(43rem, 73.75rem) {
+    padding: 4.5rem 5rem 0.8rem 5rem;
+    ul {
+      width: 21.5%;
+      li {
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+    img {
+      width: 11rem;
+    }
   }
 }
