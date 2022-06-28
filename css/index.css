@@ -461,6 +461,16 @@ main div#end p.parag {
   padding: 0rem 1.6rem 2rem 1.6rem;
   line-height: 1.3rem;
 }
+main div#end p#error {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 0rem 2rem 2rem 2rem;
+  color: hsl(0deg, 100%, 63%);
+}
+main div#end p#error.hide {
+  display: none;
+}
 main div#end div#endDiv input {
   font-family: 'Open Sans', sans-serif;
   width: 64vw;
@@ -518,6 +528,18 @@ main div#end div#endDiv button:hover {
   main {
     /* ------ ($min-wdth, $max-wdth) ------ */
   }
+  main div#intro {
+    padding-top: 4rem;
+    background: url('../images/bg-curvy-mobile.svg'),
+      linear-gradient(
+        180deg,
+        hsl(217deg, 28%, 15%) 95%,
+        hsl(218deg, 28%, 13%) 10%
+      );
+    background-position: 65% 95%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+  }
   main div#intro h1 {
     padding: 0.5rem 27vw 0rem 27vw;
   }
@@ -528,8 +550,23 @@ main div#end div#endDiv button:hover {
   main div#info div#lower div p.parag {
     padding: 0rem 13vw 0rem 13vw;
   }
+  main div#middle img {
+    width: 70vw;
+    margin-left: 15vw;
+  }
   main div#middle div#midDiv {
-    margin-right: 5vw;
+    margin: 1rem 7vw 0rem 7vw;
+  }
+  main div#testimon #quote {
+    width: 2rem;
+    position: relative;
+    left: -27vw;
+  }
+  main div#testimon div.card {
+    width: 60vw;
+  }
+  main div#testimon div.card p.quote {
+    font-size: 0.75rem;
   }
   main div#end {
     bottom: -7rem;
@@ -550,6 +587,12 @@ main div#end div#endDiv button:hover {
     font-size: 0.86rem;
     margin: 0rem;
     padding: 0rem 7vw 2rem 7vw;
+  }
+  main div#end p#error {
+    width: 80%;
+    text-align: left;
+    padding: 0rem 0vw 0rem 5vw;
+    margin-bottom: -1rem;
   }
   main div#end div#endDiv {
     width: 100%;
@@ -709,6 +752,12 @@ main div#end div#endDiv button:hover {
     margin: 0rem;
     padding: 0rem 7vw 2rem 7vw;
   }
+  main div#end p#error {
+    width: 80%;
+    text-align: left;
+    padding: 0rem 0vw 0rem 5vw;
+    margin-bottom: -1rem;
+  }
   main div#end div#endDiv {
     width: 100%;
   }
@@ -863,6 +912,12 @@ main div#end div#endDiv button:hover {
     font-size: 0.86rem;
     margin: 0rem;
     padding: 0rem 7vw 2rem 7vw;
+  }
+  main div#end p#error {
+    width: 80%;
+    text-align: left;
+    padding: 0rem 0vw 0rem 5vw;
+    margin-bottom: -1rem;
   }
   main div#end div#endDiv {
     width: 100%;
