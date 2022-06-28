@@ -5,7 +5,8 @@
   "description": "![Design preview for the Fylo dark theme landing page challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "prettier": "prettier --config .prettierrc.json --ignore-path .prettierignore --write ."
+    "prettier": "prettier --config .prettierrc.json --ignore-path .prettierignore --write .",
+    "build": "npx tsc"
   },
   "repository": {
     "type": "git",
