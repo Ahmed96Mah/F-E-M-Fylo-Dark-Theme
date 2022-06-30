@@ -976,21 +976,22 @@ footer div.list p:hover {
 footer div#social {
   margin-left: 30%;
 }
-footer div#social i {
+footer div#social svg {
   cursor: pointer;
-  font-size: 0.75rem;
-  color: hsl(0deg, 0%, 100%);
+  width: 0.85rem;
+  fill: hsl(0deg, 0%, 100%);
   border: 1px solid hsl(0deg, 0%, 100%);
   border-radius: 0.9rem;
-  padding: 0.4rem 0.45rem;
+  padding: 0.45rem 0.45rem;
   margin: 0.5rem;
 }
-footer div#social i.fa-facebook-f {
+footer div#social svg#facebook {
+  width: 0.65rem;
   padding: 0.4rem 0.55rem;
 }
-footer div#social i:hover {
+footer div#social svg:hover {
   border-color: hsl(176deg, 68%, 64%);
-  color: hsl(176deg, 68%, 64%);
+  fill: hsl(176deg, 68%, 64%);
 }
 footer .attribution {
   font-family: 'Open Sans', sans-serif;
