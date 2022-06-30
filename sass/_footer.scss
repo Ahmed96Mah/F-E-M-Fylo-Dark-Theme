@@ -41,21 +41,20 @@ footer {
     }
     &#social {
       margin-left: 30%;
-      svg {
+      i {
         cursor: pointer;
-        width: 0.85rem;
-        fill: v.$white-clr;
+        font-size: 0.75rem;
+        color: v.$white-clr;
         border: 1px solid v.$white-clr;
         border-radius: 0.9rem;
-        padding: 0.45rem 0.45rem;
+        padding: 0.4rem 0.45rem;
         margin: 0.5rem;
-        &#facebook {
-          width: 0.65rem;
+        &.fa-facebook-f {
           padding: 0.4rem 0.55rem;
         }
         &:hover {
           border-color: v.$cyan-clr;
-          fill: v.$cyan-clr;
+          color: v.$cyan-clr;
         }
       }
     }
@@ -99,13 +98,13 @@ footer {
     div {
       &#mainFooter {
         #social {
-          margin-left: 35%;
+          margin-left: 40%;
         }
       }
       &#lowerFooter {
         width: 100%;
         .attribution {
-          margin-left: 20%;
+          margin-left: 25%;
         }
       }
     }
