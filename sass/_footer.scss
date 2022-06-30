@@ -41,20 +41,21 @@ footer {
     }
     &#social {
       margin-left: 30%;
-      i {
+      svg {
         cursor: pointer;
-        font-size: 0.75rem;
-        color: v.$white-clr;
+        width: 0.85rem;
+        fill: v.$white-clr;
         border: 1px solid v.$white-clr;
         border-radius: 0.9rem;
-        padding: 0.4rem 0.45rem;
+        padding: 0.45rem 0.45rem;
         margin: 0.5rem;
-        &.fa-facebook-f {
+        &#facebook {
+          width: 0.65rem;
           padding: 0.4rem 0.55rem;
         }
         &:hover {
           border-color: v.$cyan-clr;
-          color: v.$cyan-clr;
+          fill: v.$cyan-clr;
         }
       }
     }
