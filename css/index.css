@@ -146,7 +146,7 @@ body footer #lowerFooter {
   justify-content: center;
   align-items: flex-start;
 }
-@media only screen and (min-width: 64em) and (max-width: 75em) and (min-height: 37.5em) {
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
   body {
     /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
   }
@@ -163,7 +163,7 @@ body footer #lowerFooter {
     align-items: flex-start;
   }
 }
-@media only screen and (min-height: 43rem) and (min-width: 73.75rem) {
+@media only screen and (min-height: 37.5rem) and (min-width: 73.75rem) {
   body main div#testimon {
     display: flex;
     flex-flow: row nowrap;
@@ -207,7 +207,7 @@ header ul li a:hover {
 header img {
   width: 5rem;
 }
-@media only screen and (min-width: 41.25em) and (max-width: 53.75em) and (max-height: 26.25em) {
+@media only screen and (min-width: 41.25rem) and (max-width: 53.75rem) and (max-height: 26.25rem) {
   header {
     /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
   }
@@ -215,7 +215,7 @@ header img {
     width: 35%;
   }
 }
-@media only screen and (min-width: 47.813em) and (max-width: 63.938em) {
+@media only screen and (min-width: 47.813rem) and (max-width: 63.938rem) {
   header {
     /* ------ ($min-wdth, $max-wdth) ------ */
   }
@@ -223,7 +223,7 @@ header img {
     width: 35%;
   }
 }
-@media only screen and (min-width: 64em) and (max-width: 75em) and (min-height: 37.5em) {
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
   header {
     /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
     padding: 4.5rem 5rem 0.8rem 5rem;
@@ -238,7 +238,7 @@ header img {
     width: 11rem;
   }
 }
-@media only screen and (min-height: 43rem) and (min-width: 73.75rem) {
+@media only screen and (min-height: 37.5rem) and (min-width: 73.75rem) {
   header {
     padding: 4.5rem 5rem 0.8rem 5rem;
   }
@@ -479,7 +479,7 @@ main div#end div#endDiv button {
 main div#end div#endDiv button:hover {
   background: linear-gradient(140deg, hsl(176deg, 68%, 64%) 100%, hsl(198deg, 60%, 50%));
 }
-@media only screen and (min-width: 41.25em) and (max-width: 53.75em) and (max-height: 26.25em) {
+@media only screen and (min-width: 41.25rem) and (max-width: 53.75rem) and (max-height: 26.25rem) {
   main {
     /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
   }
@@ -496,7 +496,7 @@ main div#end div#endDiv button:hover {
     margin-right: 5vw;
   }
 }
-@media only screen and (min-width: 47.813em) and (max-width: 63.938em) {
+@media only screen and (min-width: 47.813rem) and (max-width: 63.938rem) {
   main {
     /* ------ ($min-wdth, $max-wdth) ------ */
   }
@@ -574,7 +574,7 @@ main div#end div#endDiv button:hover {
     margin: 0 5vw 0 0;
   }
 }
-@media only screen and (min-width: 64em) and (max-width: 75em) and (min-height: 37.5em) {
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
   main {
     /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
   }
@@ -728,7 +728,7 @@ main div#end div#endDiv button:hover {
     margin: 0 5vw 0 0;
   }
 }
-@media only screen and (min-height: 43rem) and (min-width: 73.75rem) {
+@media only screen and (min-height: 37.5rem) and (min-width: 73.75rem) {
   main div#intro {
     background: url("../images/bg-curvy-desktop.svg"), linear-gradient(180deg, hsl(217deg, 28%, 15%) 95%, hsl(218deg, 28%, 13%) 10%);
     background-position: 50% 97%;
@@ -953,7 +953,7 @@ footer .attribution a {
 footer .attribution a:hover {
   text-decoration: underline;
 }
-@media only screen and (min-width: 41.25em) and (max-width: 53.75em) and (max-height: 26.25em) {
+@media only screen and (min-width: 41.25rem) and (max-width: 53.75rem) and (max-height: 26.25rem) {
   footer {
     /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
   }
@@ -967,7 +967,7 @@ footer .attribution a:hover {
     margin-left: 20%;
   }
 }
-@media only screen and (min-width: 47.813em) and (max-width: 63.938em) {
+@media only screen and (min-width: 47.813rem) and (max-width: 63.938rem) {
   footer {
     /* ------ ($min-wdth, $max-wdth) ------ */
   }
@@ -981,7 +981,7 @@ footer .attribution a:hover {
     margin-left: 25%;
   }
 }
-@media only screen and (min-width: 64em) and (max-width: 75em) and (min-height: 37.5em) {
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
   footer {
     /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
     padding-top: 12rem;
@@ -1017,7 +1017,7 @@ footer .attribution a:hover {
     margin-left: 30%;
   }
 }
-@media only screen and (min-height: 43rem) and (min-width: 73.75rem) {
+@media only screen and (min-height: 37.5rem) and (min-width: 73.75rem) {
   footer {
     padding-top: 12rem;
     padding-left: 7.5rem;
