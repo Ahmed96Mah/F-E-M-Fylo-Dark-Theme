@@ -85,7 +85,7 @@ body {
   }
 
   /* ----------------------- Media Queries ----------------------- */
-  @include m.flippedPadScreens(64em, 75em, 37.5em) {
+  @include m.flippedPadScreens(64rem, 75rem, 37.5rem) {
     /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
     main {
       div {
@@ -100,7 +100,8 @@ body {
       }
     }
   }
-  @include m.wideScreens(43rem, 73.75rem) {
+  
+  @include m.wideScreens(37.5rem, 73.75rem) {
     main {
       div {
         &#testimon {
