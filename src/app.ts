@@ -4,38 +4,16 @@ const processClick = (e: Event) => {
     (e.target as HTMLElement).id === 'endButton'
   ) {
     const eMail = document.querySelector('input')!.value;
+    const regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const errParag = document.querySelector('#error')!;
-    if (eMail.match('@')) {
-      const domain = eMail.split('@');
-      // If after the '@', there is a domain name and '.'
-      if (
-        domain[1].split('.')[1] !== undefined &&
-        domain[1].split('.')[0] !== ''
-      ) {
-        // If e-mail domain ends with '.com' && e-mail contains ONLY one '@'
-        if (
-          domain[1].split('.')[1].toLowerCase() === 'com' &&
-          domain[2] === undefined
-        ) {
-          // valid E-Mail
-          if (!errParag.classList.contains('hide')) {
-            errParag.classList.toggle('hide');
-          }
-        } else {
-          //invalid E-Mail
-          if (errParag.classList.contains('hide')) {
-            errParag.classList.toggle('hide');
-          }
-        }
-      } else {
-        //invalid E-Mail
-        if (errParag.classList.contains('hide')) {
-          errParag.classList.toggle('hide');
-        }
-      }
-    } else {
-      //invalid E-Mail
+    if (!eMail.match(regEx)) {
+      // Invalid exp
       if (errParag.classList.contains('hide')) {
+        errParag.classList.toggle('hide');
+      }
+    }else {
+      // Valid exp
+      if (!errParag.classList.contains('hide')) {
         errParag.classList.toggle('hide');
       }
     }
