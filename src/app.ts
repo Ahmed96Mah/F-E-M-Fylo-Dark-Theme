@@ -4,7 +4,7 @@ const processClick = (e: Event) => {
     (e.target as HTMLElement).id === 'endButton'
   ) {
     const eMail = document.querySelector('input')!.value;
-    const regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
     const errParag = document.querySelector('#error')!;
     if (!eMail.match(regEx)) {
       // Invalid exp
