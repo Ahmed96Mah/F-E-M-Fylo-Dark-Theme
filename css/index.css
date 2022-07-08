@@ -921,22 +921,47 @@ footer div.list p:hover {
 }
 footer div#social {
   margin-left: 30%;
+  width: 7rem;
+  /*
+  i {
+    cursor: pointer;
+    font-size: 0.75rem;
+    color: v.$white-clr;
+    border: 1px solid v.$white-clr;
+    border-radius: 0.9rem;
+    padding: 0.4rem 0.45rem;
+    margin: 0.5rem;
+    &.fa-facebook-f {
+      padding: 0.4rem 0.55rem;
+    }
+    &:hover {
+      border-color: v.$cyan-clr;
+      color: v.$cyan-clr;
+    }
+  }
+  */
 }
-footer div#social i {
-  cursor: pointer;
-  font-size: 0.75rem;
+footer div#social svg {
+  fill: currentColor;
   color: hsl(0deg, 0%, 100%);
   border: 1px solid hsl(0deg, 0%, 100%);
-  border-radius: 0.9rem;
-  padding: 0.4rem 0.45rem;
-  margin: 0.5rem;
+  border-radius: 1rem;
 }
-footer div#social i.fa-facebook-f {
-  padding: 0.4rem 0.55rem;
+footer div#social svg#facebook {
+  width: 0.6rem;
+  padding: 0.45rem 0.65rem;
 }
-footer div#social i:hover {
-  border-color: hsl(176deg, 68%, 64%);
+footer div#social svg#twitter {
+  width: 0.8rem;
+  padding: 0.55rem;
+}
+footer div#social svg#instagram {
+  width: 0.9rem;
+  padding: 0.45rem 0.5rem;
+}
+footer div#social svg:hover {
   color: hsl(176deg, 68%, 64%);
+  border-color: hsl(176deg, 68%, 64%);
 }
 footer .attribution {
   font-family: "Open Sans", sans-serif;
