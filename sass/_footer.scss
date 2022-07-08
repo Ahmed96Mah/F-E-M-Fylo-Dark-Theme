@@ -64,24 +64,6 @@ footer {
           border-color: v.$cyan-clr;
         }
       }
-      /*
-      i {
-        cursor: pointer;
-        font-size: 0.75rem;
-        color: v.$white-clr;
-        border: 1px solid v.$white-clr;
-        border-radius: 0.9rem;
-        padding: 0.4rem 0.45rem;
-        margin: 0.5rem;
-        &.fa-facebook-f {
-          padding: 0.4rem 0.55rem;
-        }
-        &:hover {
-          border-color: v.$cyan-clr;
-          color: v.$cyan-clr;
-        }
-      }
-      */
     }
   }
   .attribution {
@@ -90,6 +72,7 @@ footer {
     font-size: 11px;
     text-align: center;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     margin-right: 2rem;
     a {
       color: skyblue;
