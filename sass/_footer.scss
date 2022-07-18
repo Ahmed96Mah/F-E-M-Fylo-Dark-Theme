@@ -41,28 +41,36 @@ footer {
     }
     &#social {
       margin-left: 30%;
-      width: 7rem;
-      svg {
-        fill: currentColor;
-        color: v.$white-clr;
+      width: 8rem;
+      a {
+        padding: 0.5rem 0.755rem 0.3rem 0.755rem;
+        border-radius: 100%;
         border: 1px solid v.$white-clr;
-        border-radius: 1rem;
-        &#facebook{
-          width: 0.6rem;
-          padding: 0.45rem 0.65rem;
-        }
-        &#twitter{
-          width: 0.8rem;
-          padding: 0.55rem;
-        }
-        &#instagram{
-          width: 0.9rem;
-          padding: 0.45rem 0.5rem;
+        svg {
+          fill: currentColor;
+          color: v.$white-clr;
+          &#facebook{
+            width: 0.6rem;
+          }
+          &#twitter{
+            width: 0.85rem;
+          }
+          &#instagram{
+            width: 0.9rem;
+          }
         }
         &:hover {
-          color: v.$cyan-clr;
           border-color: v.$cyan-clr;
+          :first-child{
+          color: v.$cyan-clr;
+          }
         }
+      }
+      :nth-child(2){
+        padding: 0.5rem 0.65rem 0.3rem 0.65rem;
+      }
+      :nth-child(3){
+        padding: 0.55rem 0.65rem 0.25rem 0.65rem;
       }
     }
   }
