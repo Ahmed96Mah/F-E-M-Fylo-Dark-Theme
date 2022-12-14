@@ -11,7 +11,7 @@ const processClick = (e: Event) => {
       if (errParag.classList.contains('hide')) {
         errParag.classList.toggle('hide');
       }
-    }else {
+    } else {
       // Valid exp
       if (!errParag.classList.contains('hide')) {
         errParag.classList.toggle('hide');

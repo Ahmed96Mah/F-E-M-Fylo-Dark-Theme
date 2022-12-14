@@ -49,27 +49,27 @@ footer {
         svg {
           fill: currentColor;
           color: v.$white-clr;
-          &#facebook{
+          &#facebook {
             width: 0.6rem;
           }
-          &#twitter{
+          &#twitter {
             width: 0.85rem;
           }
-          &#instagram{
+          &#instagram {
             width: 0.9rem;
           }
         }
         &:hover {
           border-color: v.$cyan-clr;
-          :first-child{
-          color: v.$cyan-clr;
+          :first-child {
+            color: v.$cyan-clr;
           }
         }
       }
-      :nth-child(2){
+      :nth-child(2) {
         padding: 0.5rem 0.65rem 0.3rem 0.65rem;
       }
-      :nth-child(3){
+      :nth-child(3) {
         padding: 0.55rem 0.65rem 0.25rem 0.65rem;
       }
     }

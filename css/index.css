@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 /* Media Queries */
 body {
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-template-columns: 1fr;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: 'header' 'main' 'footer';
   /* ----------------------- Media Queries ----------------------- */
 }
 body header {
@@ -185,7 +185,7 @@ body footer #lowerFooter {
 header {
   background-color: hsl(217deg, 28%, 15%);
   padding: 0.8rem 1.5rem 0.8rem 1.2rem;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   /* ----------------------- Media Queries ----------------------- */
 }
@@ -258,10 +258,15 @@ main {
   /* ----------------------- Media Queries ----------------------- */
 }
 main div#intro {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: hsl(217deg, 28%, 15%);
   margin-bottom: 8rem;
-  background: url("../images/bg-curvy-mobile.svg"), linear-gradient(180deg, hsl(217deg, 28%, 15%) 58%, hsl(218deg, 28%, 13%) 10%);
+  background: url('../images/bg-curvy-mobile.svg'),
+    linear-gradient(
+      180deg,
+      hsl(217deg, 28%, 15%) 58%,
+      hsl(218deg, 28%, 13%) 10%
+    );
   background-position: 65% 46%;
   background-size: 110%;
   background-repeat: no-repeat;
@@ -279,7 +284,7 @@ main div#intro h1 {
 }
 main div#intro p {
   margin: 0 0 2rem 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.875rem;
   text-align: center;
   color: whitesmoke;
@@ -288,9 +293,13 @@ main div#intro p {
   font-weight: 400;
 }
 main div#intro button {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: hsl(0deg, 0%, 100%);
-  background: linear-gradient(140deg, hsl(176deg, 68%, 64%) -40%, hsl(198deg, 60%, 50%) 80%);
+  background: linear-gradient(
+    140deg,
+    hsl(176deg, 68%, 64%) -40%,
+    hsl(198deg, 60%, 50%) 80%
+  );
   border-radius: 2rem;
   border: none;
   padding: 1rem 5rem;
@@ -298,28 +307,37 @@ main div#intro button {
   cursor: pointer;
 }
 main div#intro button:hover {
-  background: linear-gradient(140deg, hsl(176deg, 68%, 64%) 100%, hsl(198deg, 60%, 50%));
+  background: linear-gradient(
+    140deg,
+    hsl(176deg, 68%, 64%) 100%,
+    hsl(198deg, 60%, 50%)
+  );
 }
 main div#info {
   margin-bottom: 5rem;
 }
-main div#info div#upper div, main div#info div#lower div {
-  font-family: "Raleway", sans-serif;
+main div#info div#upper div,
+main div#info div#lower div {
+  font-family: 'Raleway', sans-serif;
   color: hsl(0deg, 0%, 100%);
 }
-main div#info div#upper div img, main div#info div#lower div img {
+main div#info div#upper div img,
+main div#info div#lower div img {
   width: 4rem;
 }
-main div#info div#upper div p, main div#info div#lower div p {
+main div#info div#upper div p,
+main div#info div#lower div p {
   text-align: center;
 }
-main div#info div#upper div p.title, main div#info div#lower div p.title {
+main div#info div#upper div p.title,
+main div#info div#lower div p.title {
   font-size: 1.05rem;
   font-weight: 600;
   margin-top: 2.5rem;
 }
-main div#info div#upper div p.parag, main div#info div#lower div p.parag {
-  font-family: "Open Sans", sans-serif;
+main div#info div#upper div p.parag,
+main div#info div#lower div p.parag {
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 0.86rem;
   padding: 0rem 2rem 0rem 2rem;
@@ -334,7 +352,7 @@ main div#middle img {
   margin-left: 10vw;
 }
 main div#middle div#midDiv {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: hsl(0deg, 0%, 100%);
 }
 main div#middle div#midDiv p.title {
@@ -346,7 +364,7 @@ main div#middle div#midDiv p.title {
 }
 main div#middle div#midDiv p.parag {
   text-align: left;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 0.86rem;
   padding: 0rem 1.5rem 0rem 2rem;
@@ -354,7 +372,7 @@ main div#middle div#midDiv p.parag {
   margin-bottom: 1rem;
 }
 main div#middle div#midDiv #see {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-left: 2rem;
   padding-bottom: 0.3rem;
   border-bottom: 1px solid hsl(176deg, 68%, 64%);
@@ -372,7 +390,8 @@ main div#middle div#midDiv #see:hover {
   border-color: hsl(0deg, 0%, 100%);
 }
 main div#middle div#midDiv #see:hover img {
-  filter: invert(0%) sepia(100%) saturate(32%) hue-rotate(162deg) brightness(95%) contrast(106%);
+  filter: invert(0%) sepia(100%) saturate(32%) hue-rotate(162deg)
+    brightness(95%) contrast(106%);
 }
 main div#middle div#midDiv #see:hover span {
   color: hsl(0deg, 0%, 100%);
@@ -387,7 +406,7 @@ main div#testimon div.card {
   margin-bottom: 1.7rem;
   border-radius: 0.5rem;
   background-color: hsl(219deg, 30%, 18%);
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: hsl(0deg, 0%, 100%);
 }
 main div#testimon div.card p.quote {
@@ -425,7 +444,7 @@ main div#end {
   margin-top: 3rem;
   background-color: hsl(217deg, 28%, 15%);
   border-radius: 0.4rem;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: hsl(0deg, 0%, 100%);
   box-shadow: 0.3rem 0.4rem 0.45rem hsl(216deg, 53%, 9%);
 }
@@ -435,7 +454,7 @@ main div#end p.title {
   margin-top: 2.5rem;
 }
 main div#end p.parag {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-align: center;
   font-size: 0.86rem;
@@ -444,7 +463,7 @@ main div#end p.parag {
   line-height: 1.3rem;
 }
 main div#end p#error {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.6rem;
   font-weight: 700;
   padding: 0rem 2rem 2rem 2rem;
@@ -454,7 +473,7 @@ main div#end p#error.hide {
   display: none;
 }
 main div#end div#endDiv input {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   width: 64vw;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -465,9 +484,13 @@ main div#end div#endDiv input {
   margin-left: 7.5vw;
 }
 main div#end div#endDiv button {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: hsl(0deg, 0%, 100%);
-  background: linear-gradient(140deg, hsl(176deg, 68%, 64%) -40%, hsl(198deg, 60%, 50%) 80%);
+  background: linear-gradient(
+    140deg,
+    hsl(176deg, 68%, 64%) -40%,
+    hsl(198deg, 60%, 50%) 80%
+  );
   width: 75vw;
   border-radius: 2rem;
   border: none;
@@ -478,7 +501,11 @@ main div#end div#endDiv button {
   cursor: pointer;
 }
 main div#end div#endDiv button:hover {
-  background: linear-gradient(140deg, hsl(176deg, 68%, 64%) 100%, hsl(198deg, 60%, 50%));
+  background: linear-gradient(
+    140deg,
+    hsl(176deg, 68%, 64%) 100%,
+    hsl(198deg, 60%, 50%)
+  );
 }
 @media only screen and (min-width: 41.25rem) and (max-width: 53.75rem) and (max-height: 26.25rem) {
   main {
@@ -490,7 +517,8 @@ main div#end div#endDiv button:hover {
   main div#intro p {
     padding: 0.5rem 15vw 0rem 15vw;
   }
-  main div#info div#upper div p.parag, main div#info div#lower div p.parag {
+  main div#info div#upper div p.parag,
+  main div#info div#lower div p.parag {
     padding: 0rem 13vw 0rem 13vw;
   }
   main div#middle div#midDiv {
@@ -503,7 +531,12 @@ main div#end div#endDiv button:hover {
   }
   main div#intro {
     padding-top: 4rem;
-    background: url("../images/bg-curvy-mobile.svg"), linear-gradient(180deg, hsl(217deg, 28%, 15%) 95%, hsl(218deg, 28%, 13%) 10%);
+    background: url('../images/bg-curvy-mobile.svg'),
+      linear-gradient(
+        180deg,
+        hsl(217deg, 28%, 15%) 95%,
+        hsl(218deg, 28%, 13%) 10%
+      );
     background-position: 65% 95%;
     background-size: 110%;
     background-repeat: no-repeat;
@@ -514,7 +547,8 @@ main div#end div#endDiv button:hover {
   main div#intro p {
     padding: 0.5rem 15vw 0rem 15vw;
   }
-  main div#info div#upper div p.parag, main div#info div#lower div p.parag {
+  main div#info div#upper div p.parag,
+  main div#info div#lower div p.parag {
     padding: 0rem 13vw 0rem 13vw;
   }
   main div#middle img {
@@ -548,7 +582,7 @@ main div#end div#endDiv button:hover {
     margin-bottom: 1.5rem;
   }
   main div#end p.parag {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: 0.86rem;
@@ -580,7 +614,12 @@ main div#end div#endDiv button:hover {
     /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
   }
   main div#intro {
-    background: url("../images/bg-curvy-desktop.svg"), linear-gradient(180deg, hsl(217deg, 28%, 15%) 95%, hsl(218deg, 28%, 13%) 10%);
+    background: url('../images/bg-curvy-desktop.svg'),
+      linear-gradient(
+        180deg,
+        hsl(217deg, 28%, 15%) 95%,
+        hsl(218deg, 28%, 13%) 10%
+      );
     background-position: 50% 97%;
     background-size: 105%;
     background-repeat: no-repeat;
@@ -608,20 +647,25 @@ main div#end div#endDiv button:hover {
   main div#info {
     margin-top: -12rem;
   }
-  main div#info div#upper, main div#info div#lower {
+  main div#info div#upper,
+  main div#info div#lower {
     margin-left: 17vw;
     margin-right: 17vw;
   }
-  main div#info div#upper div, main div#info div#lower div {
+  main div#info div#upper div,
+  main div#info div#lower div {
     width: 31vw;
   }
-  main div#info div#upper div img, main div#info div#lower div img {
+  main div#info div#upper div img,
+  main div#info div#lower div img {
     width: 5rem;
   }
-  main div#info div#upper div img.tall, main div#info div#lower div img.tall {
+  main div#info div#upper div img.tall,
+  main div#info div#lower div img.tall {
     width: 4rem;
   }
-  main div#info div#upper div p.title, main div#info div#lower div p.title {
+  main div#info div#upper div p.title,
+  main div#info div#lower div p.title {
     margin-top: 2rem;
   }
   main div#middle img {
@@ -702,7 +746,7 @@ main div#end div#endDiv button:hover {
     margin-bottom: 1.5rem;
   }
   main div#end p.parag {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: 0.86rem;
@@ -731,7 +775,12 @@ main div#end div#endDiv button:hover {
 }
 @media only screen and (min-height: 37.5rem) and (min-width: 73.75rem) {
   main div#intro {
-    background: url("../images/bg-curvy-desktop.svg"), linear-gradient(180deg, hsl(217deg, 28%, 15%) 95%, hsl(218deg, 28%, 13%) 10%);
+    background: url('../images/bg-curvy-desktop.svg'),
+      linear-gradient(
+        180deg,
+        hsl(217deg, 28%, 15%) 95%,
+        hsl(218deg, 28%, 13%) 10%
+      );
     background-position: 50% 97%;
     background-size: 105%;
     background-repeat: no-repeat;
@@ -759,20 +808,25 @@ main div#end div#endDiv button:hover {
   main div#info {
     margin-top: -12rem;
   }
-  main div#info div#upper, main div#info div#lower {
+  main div#info div#upper,
+  main div#info div#lower {
     margin-left: 17vw;
     margin-right: 17vw;
   }
-  main div#info div#upper div, main div#info div#lower div {
+  main div#info div#upper div,
+  main div#info div#lower div {
     width: 31vw;
   }
-  main div#info div#upper div img, main div#info div#lower div img {
+  main div#info div#upper div img,
+  main div#info div#lower div img {
     width: 5rem;
   }
-  main div#info div#upper div img.tall, main div#info div#lower div img.tall {
+  main div#info div#upper div img.tall,
+  main div#info div#lower div img.tall {
     width: 4rem;
   }
-  main div#info div#upper div p.title, main div#info div#lower div p.title {
+  main div#info div#upper div p.title,
+  main div#info div#lower div p.title {
     margin-top: 2rem;
   }
   main div#middle img {
@@ -853,7 +907,7 @@ main div#end div#endDiv button:hover {
     margin-bottom: 1.5rem;
   }
   main div#end p.parag {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: 0.86rem;
@@ -891,7 +945,7 @@ footer #ftrLogo {
   margin-bottom: 2.5rem;
 }
 footer div {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -955,7 +1009,7 @@ footer div#social :nth-child(3) {
   padding: 0.55rem 0.65rem 0.25rem 0.65rem;
 }
 footer .attribution {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: hsl(0deg, 0%, 100%);
   font-size: 11px;
   text-align: center;
